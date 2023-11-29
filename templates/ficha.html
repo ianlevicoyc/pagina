@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ficha de Registro</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ficha.css' %}">
+</head>
+<body>
+    <h1>Ficha de Registro</h1>
+    <div class="fondo-negro"></div>
+    <form method="post" enctype="multipart/form-data">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <br><br>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+        
+        <br><br>
+        
+        <label for="cedula">Rut:</label>
+        <input type="text" id="cedula" name="cedula" required>
+        
+        <br><br>
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono">
+        
+        <br><br>
+        
+        <label for="direccion">Dirección:</label>
+        <textarea id="direccion" name="direccion" rows="4" cols="50"></textarea>
+        
+        <br><br>
+        
+        <label for="Ciudad">Ciudad:</label>
+        <input type="city" id="Ciudad" name="Ciudad">
+        
+        <br><br>
+        
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+        
+        <br><br>
+        
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+        
+        <br><br>
+        
+        <label for="profesion">Profesión:</label>
+        <input type="text" id="profesion" name="profesion">
+        
+        <br><br>
+        
+        <label for="experiencia">Experiencia como Bombero (Años):</label>
+        <input type="number" id="experiencia" name="experiencia" min="0">
+        
+        <br><br>
+        
+        <label for="estatus">Estatus Actual:</label>
+        <select id="estatus" name="estatus">
+            <option value="activo">Activo</option>
+            <option value="inactivo">Inactivo</option>
+        </select>
+        
+        <br><br>
+
+        <label for="licencia_conducir">Licencia de Conducir:</label>
+        <select id="Licencia" name="Licencia">
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+        </select>
+        
+        <br><br>
+
+        <label for="fecha_de_Ingreso">Fecha De Ingreso:</label>
+        <input type="date" id="fecha_de_Ingreso" name="fecha_de_Ingreso">
+        
+        <br><br>
+        
+        <label for="Departamento">Departamento:</label>
+        <input type="text" id="Departamento" name="Departamento">
+        
+        <br><br>
+        
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>

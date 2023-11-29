@@ -1,0 +1,172 @@
+{% load static %}
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bienvenida</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+	</head>
+	<section>
+		<header>
+      {%load static%}
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<nav class="navbar navbar-expand-lg bg-custom">
+							<div class="container-fluid">
+								<img class="Logo" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHzeo4QJBwaKZYjgE7OHikAZ4BGrRJKN2kn0srIj05Y94ZKmt3" alt="Logo de Pets Lover">
+								<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+								</button>
+								<div class="collapse navbar-collapse" id="navbarSupportedContent">
+									<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+										{% load static %}
+										<li class="nav-item">
+											<a class="nav-link" aria-current="page" href="{% url 'login' %}">Iniciar sesion</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="{% url 'ficha' %}">Ficha de registro</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="{% url 'inventario' %}"> Ver Inventario</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="{% url 'verUsuarios' %}"> Ver usuarios</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="{% url 'register' %}">Register</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="{% url 'EnUso' %}">Elmento en uso</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="{% url 'prestado' %}">prestamo</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="{% url 'elemento' %}">Agregar Elementos</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="{% url 'alertas' %}">Agregar alertas</a>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+	</section>	
+<br>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<p>
+						<h1>Bomberos De Iquique!!!<h1>
+
+					</p>
+
+				</div>
+				<div class="col-md-6">
+		
+					<div id="carouselImage1" class="carousel slide">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselImage1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselImage1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselImage1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner" id="imagen1">
+							<div class="carousel-item active">
+								<img src="https://www.bomberos.cl/images/profesionales-emergencia.jpg" class="d-block w-100" alt="imagen">
+							</div>
+							<div class="carousel-item">
+								<img src="https://www.diarioconstitucional.cl/wp-content/uploads/2022/05/bomberos-3.jpg" class="d-block w-100" alt="imagen">
+							</div>
+							<div class="carousel-item">
+								<img src="https://www.diarioconstitucional.cl/wp-content/uploads/2022/05/bomberos-2.jpeg" class="d-block w-100" alt="imagen">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselImage1" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Anterior</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselImage1" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Siguiente</span>
+						</button>
+					</div>
+				</div>
+						</div>
+						<br>
+		
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Footer -->
+					<footer
+							class="text-center text-lg-start text-white"
+							
+							
+							>
+
+					  	<div class="container">
+							<div class="row" style="background-color: rgba(0, 0, 0, 0.199);" >
+								<div class="col-md-6">
+									<ul class="list-unstyled mb-0 p-3" >
+										<li>
+											132
+										</li>
+										<br>
+										<li>
+											+56 57 2724143
+										</li>
+										<br>
+										<li>
+											contacto@germaniaiquique.cl
+										</li>
+										<li>
+										
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<ul class="list-unstyled mb-0" >
+										<h4 class="text-uppercase"> Otras páginas</h4>
+										<li>
+										  <a href="https://web.facebook.com/Germaniaiqq/?_rdc=1&_rdr" class="text-white">Facebook </a>
+										</li>
+										<li>
+										  <a href="https://twitter.com/germania_iqq?lang=es" class="text-white"> Twitter</a>
+										</li>
+										<li>
+										  <a href="https://www.instagram.com/germania.iqq_cbi/" class="text-white">Instagram</a>
+										</li>
+										<li>
+										  <a href="https://germaniaiquique.cl/" class="text-white">Página oficial </a>
+										</li>
+									</ul>
+								</div>	
+								<div class="col-md-12">
+									<div class="text-center p-3" >
+										© 2020 Copyright:
+										<a class="text-dark"></a> </a>
+									</div>
+								</div>	
+							</div>	
+						</div>
+					</footer>
+				</div>
+			</div>	
+			<!-- Footer -->
+
+		</div>
+	
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	</body>
+</html>
+

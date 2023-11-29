@@ -1,0 +1,52 @@
+.bg-custom {
+	background-color: Black;
+	border: 5px solid #fbc900;;
+	border-radius: 10px;
+}
+
+#carouselImage1{
+	border: 5px solid #fbc900;;
+}
+
+.nav-link{
+	color: white;
+	font-size: 23px;
+
+}
+footer{
+	border: 5px solid #fbc900;
+	background-color:Black;
+}
+nav{
+	height:100px
+}
+
+.navbar-brand{
+	color: white;
+	font-size: 23px;
+}
+body{
+	
+	background-color: whitesmoke;
+}
+.Logo{
+	width: 60px;
+}
+
+h1{
+	color: black;
+	font-size: 100px;
+}
+
+/* Estilo para los elementos li del menú de navegación */
+.navbar-nav li.nav-item {
+    transition: background-color 0.3s, color 0.3s; /* Transición suave de color y fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    color: white; /* Color de texto inicial (blanco) */
+}
+
+/* Cuando el mouse pasa sobre un elemento li */
+.navbar-nav li.nav-item:hover {
+    background-color: yellow; /* Fondo amarillo */
+    color: black; /* Texto en negro cuando el mouse pasa sobre él */
+}

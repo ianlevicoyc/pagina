@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<title>Register</title>  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #fbc900; /* Amarillo */
+      margin: 0;
+      padding: 0;
+  }
+
+  .container {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #ff5733; /* Rojo */
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  h2 {
+      text-align: center;
+      color: #000; /* Negro */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-size: 24px;
+      font-weight: bold;
+  }
+
+  form {
+      margin-top: 20px;
+  }
+
+  .alert {
+      background-color: #ff5733; /* Rojo */
+      color: #fff;
+  }
+
+  .btn-primary {
+      background-color: #fbc900; /* Amarillo */
+      border: none;
+  }
+
+  .btn-primary:hover {
+      background-color: #000; /* Negro */
+  }
+</style>
+</head>  
+<body>  
+<div class="container">
+  <h2>Registrar usuarios</h2>
+</div>
+ 
+<div class="container">
+{% if messages %}
+  <div class="row">
+    <!---- for message in messages --->
+      <div class="alert alert-{{ message.tags }}" role="alert">
+          <p>{{ message }}</p>
+      </div>
+      
+  </div>
+{% endif %}
+
+   
+  <form method="POST" action="">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+
+    <button type="submit" value="Submit" class="btn btn-primary">Guardar</button>
+  </form>
+  
+</div>
+</body>  
+</html> 

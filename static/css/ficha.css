@@ -1,0 +1,83 @@
+/* Estilos para el formulario */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:  #f6d5d500;
+    border: 1px solid #f6ff00;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+}
+
+label {
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center; /* Centrar horizontalmente */
+    margin-top: 20px; /* Ajusta el margen superior según tus preferencias */
+    color: #ffffff; /* Color de texto estándar */
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Estilo para el cuerpo del formulario (parte central) */
+.form-body {
+    background-color: #FFD700; 
+    padding: 20px;
+}
+body {
+    background-image: url('https://germaniaiquique.cl/wp-content/uploads/2021/10/admision.jpg.webp'); /* Reemplaza imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+/* Estilo para los campos de entrada y textarea */
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f8f8f8ee;
+    border-radius: 3px;
+    background-color: #f8f7e7c7; 
+    color: #ff0000; /* Color de texto estándar */
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilo para el campo "Ciudad" */
+input[type="city"] {
+    width: 90%;
+    padding: 10px;
+    
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color:  #f8f7e7c7;
+}
+
+/* Estilo para los elementos select, fecha y número */
+select, input[type="date"], input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color:  #f8f7e7c7;
+    color:#361500
+}
+
+/* Estilo para el botón de envío */
+input[type="submit"] {
+    background-color: #D9534F; /* Fondo rojo suave para el botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}

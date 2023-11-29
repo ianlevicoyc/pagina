@@ -1,0 +1,24 @@
+body {
+    background-image: url('https://c.pxhere.com/photos/01/45/fire_firefighters_fire_truck_volunteer_firefighter_delete_save_lives_exercise_fire_extinguishing-681387.jpg!d'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+ background-color: #fbc900; 
+ display: inline-block; 
+ border-radius: 16px;
+}
+
+h2 {
+    background-color: #fbc900; 
+    display: inline-block; 
+    border-radius: 16px;
+   }
+
+h4 {
+    background-color: #fbc900; 
+    display: inline-block; 
+    border-radius: 16px;
+   }

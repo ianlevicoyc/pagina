@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ver Usuarios</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #fbc900; /* Amarillo */
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+        color: #000; /* Negro */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        padding: 20px 0;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        background: #ff5733; /* Rojo */
+        padding: 80px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #000; /* Negro */
+        border-radius: 4px;
+    }
+
+    button {
+        background-color: #fbc900; /* Amarillo */
+        color: #000; /* Negro */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #ff5733; /* Rojo */
+    }
+
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid #000; /* Negro */
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #ff5733; /* Rojo */
+        color: #fff;
+    }
+
+    tr:nth-child(even) {
+        background-color: #fbc900; /* Amarillo */
+    }
+</style>
+
+
+
+
+<body>
+    <h1> Ver usuarios </h1>
+    <form method="get">
+        <input type="text" name="q" placeholder="Buscar por nombre">
+        <input type="submit" value="Buscar">
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Grado</th>
+                <th>Correo</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in inventario %}
+                <tr>
+                    <td>{{ item.Nombre }}</td>
+                    <td>{{ item.Apellido }}</td>
+                    <td>{{ item.Grado }}</td>
+                    <td>{{ item.Correo }}</td>
+                 
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
